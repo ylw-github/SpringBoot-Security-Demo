@@ -16,7 +16,7 @@ public class MyAuthenticationFailureHandler implements AuthenticationFailureHand
 	public void onAuthenticationFailure(HttpServletRequest req, HttpServletResponse res, AuthenticationException auth)
 			throws IOException, ServletException {
 		System.out.println("登陆失败!");
-		res.sendRedirect("http://baidu.com");
+		res.sendRedirect("http://mayikt.com");
 
 	}
 

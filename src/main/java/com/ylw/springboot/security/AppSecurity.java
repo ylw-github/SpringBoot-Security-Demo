@@ -1,8 +1,10 @@
 package com.ylw.springboot.security;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+@MapperScan("com.ylw.springboot.security.mapper")
 @SpringBootApplication
 public class AppSecurity {
 

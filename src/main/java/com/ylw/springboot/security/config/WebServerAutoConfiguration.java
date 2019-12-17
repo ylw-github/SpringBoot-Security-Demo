@@ -7,9 +7,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpStatus;
 
-/**
- * 自定义 WEB 服务器参数 可以配置默认错误页面
- */
 @Configuration
 public class WebServerAutoConfiguration {
 	@Bean

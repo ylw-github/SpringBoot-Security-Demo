@@ -3,6 +3,7 @@ package com.ylw.springboot.security.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class OrderController {
@@ -40,6 +41,13 @@ public class OrderController {
 	@GetMapping("/login")
 	public String login() {
 		return "login";
+	}
+
+	/// 实现 userAdd 角色能够查询到findByOrder
+	@RequestMapping("/findByOrder")
+	@ResponseBody
+	public String findByOrder() {
+		return "查询订单成功";
 	}
 
 }
